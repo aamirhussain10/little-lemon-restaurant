@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 70" width="100%" height="100%">
+  <defs>
+    <linearGradient id="lemonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE043" />
+      <stop offset="100%" stop-color="#F4CE14" />
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5E7D73" />
+      <stop offset="100%" stop-color="#495E57" />
+    </linearGradient>
+  </defs>
+
+  <!-- Lemon Fruit -->
+  <g transform="translate(10, 5)">
+    <!-- Leaf -->
+    <path d="M 28 15 C 28 5, 45 4, 48 1 C 45 15, 38 18, 28 15 Z" fill="url(#leafGrad)" />
+    <!-- Small secondary leaf -->
+    <path d="M 23 18 C 18 10, 10 12, 8 10 C 12 18, 18 20, 23 18 Z" fill="#495E57" />
+    <!-- Lemon Body -->
+    <path d="M 26 12 C 42 12, 54 26, 52 42 C 50 56, 36 60, 24 58 C 12 56, 2 44, 4 28 C 6 16, 16 12, 26 12 Z" fill="url(#lemonGrad)" stroke="#E5B80B" stroke-width="1.5" />
+    <!-- Highlight shimmer -->
+    <ellipse cx="18" cy="28" rx="5" ry="10" transform="rotate(-25 18 28)" fill="#FFF" opacity="0.4" />
+  </g>
+
+  <!-- Typography -->
+  <text x="75" y="38" font-family="'Markazi Text', 'Georgia', serif" font-size="34" font-weight="700" fill="#495E57" letter-spacing="1">LITTLE LEMON</text>
+  <text x="76" y="55" font-family="'Karla', 'Arial', sans-serif" font-size="12" font-weight="700" fill="#EE9972" letter-spacing="3">MEDITERRANEAN RESTAURANT</text>
+</svg>
