@@ -11,9 +11,6 @@
 - [Tech Stack](#-tech-stack)
 - [Directory Structure](#-directory-structure)
 - [Quick Start Guide](#-quick-start-guide)
-- [Running Unit Tests](#-running-unit-tests)
-- [How to Upload to GitHub](#-how-to-upload-to-github)
-- [How to Deploy to Netlify](#-how-to-deploy-to-netlify)
 
 ---
 
@@ -89,7 +86,6 @@ little-lemon/
 │   ├── main.jsx
 │   ├── index.css
 │   └── setupTests.js
-├── netlify.toml                # Netlify deployment configuration
 ├── package.json
 └── vite.config.js
 ```
@@ -103,7 +99,6 @@ Double-click `copy-assets.bat` inside the project folder, or run:
 ```cmd
 copy-assets.bat
 ```
-*(The app also includes high-resolution automatic fallbacks in `src/utils/images.js`, so images will display even before copying).*
 
 ### 2. Install Dependencies
 ```bash
@@ -119,64 +114,7 @@ Open your browser and visit: `http://localhost:5173`
 
 ---
 
-## 🧪 Running Unit Tests
-To run the automated tests required for the Meta peer review:
-```bash
-npm test
-```
-This tests:
-1. Static labels and element rendering in `BookingForm`.
-2. HTML5 form validation attributes (`required`, `type`, `min`, `max`).
-3. Validation errors and submit button enable/disable states.
-4. Form submission handler triggering.
-5. `initializeTimes` returning a non-empty array of time slots.
-6. `updateTimes` returning the updated times when a date change action is dispatched.
-
----
-
-## 🐙 How to Upload to GitHub
-
-1. Open your terminal inside this folder (`little-lemon`):
-```bash
-git init
-git add .
-git commit -m "Initial commit: Little Lemon Meta Capstone Project"
-```
-
-2. Go to [GitHub.com](https://github.com) and create a new public repository named `little-lemon`.
-
-3. Link and push your local project to GitHub:
-```bash
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/little-lemon.git
-git push -u origin main
-```
-
----
-
-## 🌐 How to Deploy to Netlify
-
-### Option 1: Automatic Deployment via GitHub (Recommended)
-1. Log in to [Netlify](https://app.netlify.com).
-2. Click **"Add new site"** $\to$ **"Import an existing project"**.
-3. Select **GitHub** and authorize your account.
-4. Choose your `little-lemon` repository.
-5. Netlify will automatically detect the settings from `netlify.toml`:
-   * **Build command**: `npm run build`
-   * **Publish directory**: `dist`
-6. Click **"Deploy Little Lemon"**. Your site will be live with an HTTPS URL in seconds!
-
-### Option 2: Drag & Drop (Netlify Drop)
-1. Run the build command locally:
-   ```bash
-   npm run build
-   ```
-2. Log into [Netlify Drop](https://app.netlify.com/drop).
-3. Drag and drop the generated `dist` folder into the browser window.
-4. Your site is deployed immediately!
-
----
-
 ## 📜 License & Acknowledgements
-Created as part of the **Meta Front-End Developer Professional Certificate** on Coursera.
+Created by Aamir Hussain as part of the **Meta Front-End Developer Professional Certificate** on Coursera.
 Design assets and curriculum provided by Meta.
+Course Certification link: https://coursera.org/share/0db0cedddec5afbf44104384e628d5d2
